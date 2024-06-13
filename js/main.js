@@ -15,17 +15,24 @@ button.addEventListener("click",
         // seleziono il contenitore dei blocchi
         const grid = document.getElementById("grid");
 
-        // per 64 volte faccio qualcosa
+        // per 100 volte aggiungo l'elemento al contenitore
         for (let i = 0; i < 100; i++) {
 
             const box = createElementWithClass("div", "square");
-            console.log(box);
 
             // gestire il click sul singolo elemento
             box.addEventListener("click",
 
                 function () {
+
                     this.classList.toggle("clicked");
+                    // Ogni cella ha un numero progressivo, da 1 a 100.
+                    const squaresArray = document.getElementsByClassName("square");
+
+                    let number = i + 1;    
+                    
+                    console.log("La cella cliccata è la numero", number);
+                    
                 }
             )
 
