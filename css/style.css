@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    background-color: darkblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+#grid {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.square {
+    width: calc((100% / 8) - 10px);
+    aspect-ratio: 1 / 1;
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: aqua;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#generate_grid {
+    color: darkblue;
+    background-color: aqua;
+    font-family: inherit;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
