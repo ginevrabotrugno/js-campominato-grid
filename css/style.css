@@ -10,7 +10,7 @@
 }
 
 #grid {
-    width: 60%;
+    width: 80%;
     margin: 50px auto;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
 }
 
 .square {
-    width: calc((100% / 8) - 10px);
+    width: calc((100% / 10) - 10px);
     aspect-ratio: 1 / 1;
     border: solid 1px white;
     cursor: pointer;
