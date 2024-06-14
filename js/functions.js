@@ -45,3 +45,12 @@ function createElementWithClass(tag, classToAdd) {
 }
 
 
+// funzione che genera un array di numeri in un range in ordine casuale
+
+
+function generateRandomNumbersArray(array) {
+    
+    
+
+}
+

@@ -34,8 +34,6 @@ button.addEventListener("click",
                 function () {
 
                     this.classList.toggle("clicked");
-                    // Ogni cella ha un numero progressivo, da 1 a 100.
-                    const squaresArray = document.getElementsByClassName("square");
 
                     let number = i;    
                     
@@ -48,12 +46,6 @@ button.addEventListener("click",
             )
 
             grid.append(box);
-
-        }
-
-        if (level === "Medio") {
-                    
-                    
 
         }
 
