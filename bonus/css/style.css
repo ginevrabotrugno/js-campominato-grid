@@ -40,11 +40,22 @@ select {
 }
 
 .square {
-    width: calc((100% / 10) - 10px);
     aspect-ratio: 1 / 1;
     border: solid 1px white;
     cursor: pointer;
     position: relative;
+}
+
+.small {
+    width: calc((100% / 10) - 10px);
+}
+
+.mid {
+    width: calc((100% / 9) - 10px);
+}
+
+.big {
+    width: calc((100% / 7) - 10px);
 }
 
 .square span {

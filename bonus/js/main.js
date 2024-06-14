@@ -4,6 +4,9 @@ Ci saranno quindi 10 caselle per ognuna delle 10 righe. Quando l’utente clicca
 
 // L’utente clicca su un bottone che genererà una griglia di gioco quadrata.
 
+// seleziono input
+const level = document.getElementById("level").value;
+
 // seleziono il contenitore dei blocchi
 const grid = document.getElementById("grid");
 
@@ -23,6 +26,8 @@ button.addEventListener("click",
 
             const box = createElementWithClass("div", "square");
 
+            box.classList.add("small");
+
             // gestire il click sul singolo elemento
             box.addEventListener("click",
 
@@ -39,9 +44,16 @@ button.addEventListener("click",
                     box.innerHTML = `<span>${number}</span>`
 
                 }
+
             )
 
             grid.append(box);
+
+        }
+
+        if (level === "Medio") {
+                    
+                    
 
         }
 
