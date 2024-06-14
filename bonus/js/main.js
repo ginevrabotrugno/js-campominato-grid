@@ -4,6 +4,10 @@ Ci saranno quindi 10 caselle per ognuna delle 10 righe. Quando l’utente clicca
 
 // L’utente clicca su un bottone che genererà una griglia di gioco quadrata.
 
+// seleziono il contenitore dei blocchi
+const grid = document.getElementById("grid");
+
+
 // seleziono bottone dall html 
 const button = document.getElementById("generate_grid");
 
@@ -12,8 +16,7 @@ const button = document.getElementById("generate_grid");
 button.addEventListener("click",
     function () {
 
-        // seleziono il contenitore dei blocchi
-        const grid = document.getElementById("grid");
+        grid.innerHTML = '';
 
         // per 100 volte aggiungo l'elemento al contenitore
         for (let i = 1; i <= 100; i++) {
