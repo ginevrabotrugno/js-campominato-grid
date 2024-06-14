@@ -16,7 +16,7 @@ button.addEventListener("click",
         const grid = document.getElementById("grid");
 
         // per 100 volte aggiungo l'elemento al contenitore
-        for (let i = 0; i < 100; i++) {
+        for (let i = 1; i <= 100; i++) {
 
             const box = createElementWithClass("div", "square");
 
@@ -29,10 +29,12 @@ button.addEventListener("click",
                     // Ogni cella ha un numero progressivo, da 1 a 100.
                     const squaresArray = document.getElementsByClassName("square");
 
-                    let number = i + 1;    
+                    let number = i;    
                     
                     console.log("La cella cliccata è la numero", number);
-                    
+
+                    box.innerHTML = `<span>${number}</span>`
+
                 }
             )
 

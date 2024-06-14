@@ -33,6 +33,15 @@ header{
     aspect-ratio: 1 / 1;
     border: solid 1px white;
     cursor: pointer;
+    position: relative;
+}
+
+.square span {
+    color: darkblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .clicked {
